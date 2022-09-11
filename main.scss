@@ -1,0 +1,127 @@
+
+$blue: #3F17B6;
+
+
+.container{
+    width: 700px;
+    height: 900px;
+    border: 1px solid black;
+    background-color: rgb(131, 127, 127);
+    margin: 50px  auto;
+
+    &__top{
+        height: 40%;
+        margin: 0 auto;
+        border: 5px solid $blue;
+
+        img{
+            width: 100%;
+            height: 100%;
+
+        }
+
+    }
+
+    &__main{
+        height: 60%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-image:
+        linear-gradient(rgba(56, 67, 216, 0.548),
+        rgba(15, 35, 153, 0.589)),
+         url("https://images.unsplash.com/photo-1552710307-537199cd41c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+        }
+
+            .images{
+                position: absolute;
+                top: -60px;
+                height: auto;
+               width: 100%;
+                margin: -5px auto 40px auto;
+                display: flex;
+                flex-direction: row;
+
+
+                .image{
+                    width: 110px;
+                    height: 110px;
+                    border-radius: 50%;
+                    border: 10px solid white;
+                    margin: auto;
+                    img{
+                       width: 100%;
+                       height: 100%;
+                       border-radius: 50%;
+                    }
+                }
+            }
+
+            .infos{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 60px auto;
+
+                .info{
+                    flex: 1;
+                    display: block;
+
+                    h1{
+                        text-align: center;
+                        width: 80%;
+                        color: $blue;
+                        margin: 50px auto 10px auto;
+                    }
+
+                    p{
+                        margin: 10px auto auto 0;
+                        width: 80%;
+                        margin: auto;
+                        line-height: 1.7em;
+
+                    }
+
+
+
+
+                    .adress{
+                        margin: 90px auto 10px auto;
+                        text-align: center;
+                        text-decoration: underline;
+                    }
+
+                    h3{
+                        color: $blue;
+                        font-size: 2.2em;
+                        font-weight: bold;
+                        margin: 20px auto 30px 30px;
+
+                        strong{
+                            font-size: 1em;
+                        font-weight: bold;
+                        }
+
+                        span{
+                            font-size: 1em;
+                            font-weight: 400;
+
+                        }
+                    }
+
+                    ul{
+                        margin: 50px auto;
+                        width: 80%;
+                        margin: 20px auto;
+                        li{
+                            list-style: none;
+                            margin: auto 0;
+
+                        }
+                    }
+
+
+                }
+
+            }
+}
